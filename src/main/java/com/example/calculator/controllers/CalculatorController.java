@@ -1,6 +1,6 @@
 package com.example.calculator.controllers;
 
-import ch.qos.logback.core.model.Model;
+import org.springframework.ui.Model;
 import com.example.calculator.model.CalculationRequest;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,6 +66,7 @@ public class CalculatorController {
             return ResponseEntity.badRequest().body(response);
         }
     }
+
 
     @PostMapping("/percentage")
     @ResponseBody

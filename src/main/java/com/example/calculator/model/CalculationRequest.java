@@ -11,11 +11,11 @@ public class CalculationRequest {
     private Double operand2;
 
     @NotNull
-    private Double operation;
+    private String operation;
 
     public CalculationRequest(){}
 
-    public CalculationRequest(Double operand1, Double operand2, Double operation) {
+    public CalculationRequest(Double operand1, Double operand2, String operation) {
         this.operand1 = operand1;
         this.operand2 = operand2;
         this.operation = operation;
@@ -37,11 +37,11 @@ public class CalculationRequest {
         this.operand2 = operand2;
     }
 
-    public Double getOperation() {
+    public String getOperation() {
         return operation;
     }
 
-    public void setOperation(Double operation) {
+    public void setOperation(String operation) {
         this.operation = operation;
     }
 }
